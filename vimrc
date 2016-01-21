@@ -60,7 +60,8 @@ let g:tex_fold_enabled=1
 
 " Show tabs as triangles and trailing spaces as
 " well es lines with only spaces as dots.
-set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+" Does not seem to be compatible, because of encoding stuff
+" set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 " leave selection afer indentation (allows multiple tab)
 vnoremap < <gv
@@ -186,12 +187,12 @@ if !exists('g:airline_symbols')
 endif
 
 " unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_right_sep = '«'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_left_sep = '�'
+let g:airline_right_sep = '�'
+let g:airline_symbols.linenr = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.paste = ''
+let g:airline_symbols.whitespace = ''
 
 " set theme
 let g:airline_theme="simple"

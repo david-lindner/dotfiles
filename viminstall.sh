@@ -1,3 +1,5 @@
+rm -rf ~/.vim
+
 cp ./vimrc ~/.vimrc
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle

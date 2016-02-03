@@ -89,7 +89,8 @@ function CompileTex()
     let l:file = get(g:, 'masterfile', @%)
     execute '!rubber --pdf --synctex ' . l:file . ' ; okular --unique ' . join(split(l:file,'\.')[:-2],'') . '.pdf\#src:' . line('.') . expand('%:p')
 endfunction 
-au FileType tex,plaintex map <Leader>r :w<CR>:execute CompileTex()<CR>
+
+au FileType tex,plaintex map <Leader>r :w<CR>:call CompileTex()<CR>
 
 " very pretty comments (as healines for sections or something)
 

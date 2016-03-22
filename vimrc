@@ -32,6 +32,9 @@ set number
 " set terminal title (current version 7.4 does this by default)
 "set title
 
+" enable mouse
+set mouse=a
+
 " tabs as 4 spaces and autoindent
 set tabstop=8
 set expandtab

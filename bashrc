@@ -9,6 +9,7 @@ alias nohupbuf='nohup stdbuf -oL'
 
 # tmux with 256 colors
 alias tmux='tmux -2'
+alias grep='grep --color=always'
 
 # adding git branch to debian default prompt
 parse_git_branch() {

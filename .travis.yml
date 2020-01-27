@@ -4,6 +4,7 @@ cache: pip
 python:
   - 3.7
 install:
-  - cd ml_machine_setup; bash setup_machine.sh
+  - cd ml_machine_setup
+  - bash setup_machine.sh
 script:
-  - cd ml_machine_setup; bash test.sh
+  - bash test.sh

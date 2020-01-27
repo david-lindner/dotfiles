@@ -1,0 +1,7 @@
+. /home/david/anaconda3/etc/profile.d/conda.sh
+conda activate name
+export PYTHONBREAKPOINT=ipdb.set_trace
+export GIT_SSH_COMMAND='ssh -i /home/david/github_key'
+export MUJOCO_PY_MJKEY_PATH="/home/david/.mujoco/mjkey.txt"
+export MUJOCO_PY_MJPRO_PATH="/home/david/.mujoco/mjpro131"
+

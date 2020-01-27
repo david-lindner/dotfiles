@@ -18,6 +18,8 @@ assert ()
   fi  
 }
 
+PATH="~/bin:PATH"
+
 cd ~
 mkdir test
 cd test

@@ -18,19 +18,17 @@ assert ()
   fi  
 }
 
-PATH="~/bin:$PATH"
-
 cd ~
 mkdir test
 cd test
 
 export TEST='wrong'
 echo "export TEST='test'" > .envrc
-eval "$(direnv export bash)"
-direnv allow .
+eval "$(~/bin/direnv export bash)"
+~/bin/direnv allow .
 assert "'$TEST' == 'test'"
 
-nvidia-htop -c
+python ~/nvidia-htop/nvidia-htop -c
 
 cd ..
 rm -r test

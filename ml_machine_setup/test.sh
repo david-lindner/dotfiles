@@ -18,7 +18,7 @@ assert ()
   fi  
 }
 
-PATH="~/bin:PATH"
+PATH="~/bin:$PATH"
 
 cd ~
 mkdir test

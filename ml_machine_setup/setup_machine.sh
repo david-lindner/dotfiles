@@ -1,4 +1,5 @@
-cp bashrc ~/.bashrc
+cp ~/.bashrc ~/.bashrc~
+cat bashrc >> ~/.bashrc
 cp tmux.conf ~/.tmux.conf
 
 mkdir ~/bin

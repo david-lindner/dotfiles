@@ -7,7 +7,7 @@ cp ml-tmux.sh ~/bin/ml-tmux
 chmod +x ~/bin/ml-tmux
 
 cd ~/bin/
-wget https://github.com/direnv/direnv/releases/download/v2.20.0/direnv.linux-amd64
+wget "https://github.com/direnv/direnv/releases/download/v2.20.0/direnv.linux-amd64"
 mv direnv.linux-amd64 direnv
 chmod +x ~/bin/direnv
 
